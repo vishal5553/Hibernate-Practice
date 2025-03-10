@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="com.app.model.Vendor" table="vendor" schema="hibernate">
+    <id name="id" column="vid">
+    <generator class="increment"></generator>
+    </id>
+    <property name="name">
+    <column name="name"></column>
+    </property>
+     <property name="address">
+    <column name="address"></column>
+    </property>
+     <property name="mobile">
+    <column name="mobile"></column>
+    </property>
+     <property name="gender">
+    <column name="gender"></column>
+    </property>
+    
+    </class>
+    </hibernate-mapping>
